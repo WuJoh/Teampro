@@ -14,7 +14,7 @@ A command line application that takes information from members and employees of 
 - [GitHub Info](#GitHub) 
 
 ## Installation
-install npm init and npm install
+install npm init and npm install and use and install inquirer and jest.
 
 ## Usage
 Node
