@@ -15,6 +15,8 @@ A command line application that takes information from members and employees of 
 
 ## Installation
 to install through terminal type npm i and then to run node index.js
+watch through the demo video
+https://www.youtube.com/watch?v=q8LQhoz9TrE
 
 ## Usage
 Node
