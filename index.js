@@ -56,7 +56,6 @@ const main = () => {
                 }
             }
         ])
-        // Runs if this is the first iteration.
         .then(({ employeeName, id, email }) => {
             if (firstRun === true) {
                 firstRun = false;
@@ -82,13 +81,11 @@ const main = () => {
                                 if (menu === 'Add a team member') {
                                     main();
                                 } else {
-                                    // Creates the team dashboard webpage.
                                     makePage(team);
                                 }
                             })
                     })
             } else {
-                // Allows the addition of other team members.
                 inquirer
                     .prompt(
                         {
@@ -123,7 +120,7 @@ const main = () => {
                                             if (menu === 'Add a team member') {
                                                 main();
                                             } else {
-                                                // Creates the team dashboard webpage.
+                                                // makes the team dashboard webpage.
                                                 makePage(team);
                                             }
                                         })
@@ -153,13 +150,12 @@ const main = () => {
                                             if (menu === 'Add a team member') {
                                                 main();
                                             } else {
-                                                // Creates the team dashboard webpage.
                                                 makePage(team);
                                             }
                                         })
                                 })
                         }
-                        // Adds Manager
+    
                         if (selection === 'Manager') {
                             inquirer
                                 .prompt(
@@ -183,7 +179,6 @@ const main = () => {
                                             if (menu === 'Add a team member') {
                                                 main();
                                             } else {
-                                                // Creates the team dashboard webpage.
                                                 makePage(team);
                                             }
                                         })
@@ -194,12 +189,10 @@ const main = () => {
         })
 }
 
-// Creates 'dist' folder if it does not already exist.
 if (!fs.existsSync('./dist')) {
     fs.mkdirSync('./dist');
 }
 
-// Starts main program loop.
 main()
 
 
